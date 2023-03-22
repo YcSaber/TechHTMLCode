@@ -1,0 +1,11 @@
+h2{
+    /*定义标题居中显示*/
+    text-align: center;
+}
+p{
+    /*定义段落标签的样式*/
+    font-size: 12px;
+    font-family: "楷体", sans-serif;
+    color: darkgoldenrod;
+    text-decoration: underline;
+}

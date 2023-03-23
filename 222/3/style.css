@@ -1,0 +1,11 @@
+h2{
+    /*定义标题标签样式*/
+    text-align: center;
+    color: #ff9900;
+}
+p{
+    font-size: 20px;
+    color: #3366cc;
+    text-decoration: underline;
+    font-family: "LiSong Pro";
+}

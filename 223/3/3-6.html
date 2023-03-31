@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>id选择器</title>
+    <style type="text/css">
+        *{
+            margin: 0;  /*外边距0*/
+            padding: 0; /*内边距0*/
+        }
+        #bold{
+            font-weight: bold;
+        }
+        #font22{
+            font-size: 22px;
+        }
+        #bold1{
+            font-weight: bold;
+        }
+        #font24{
+            font-size: 24px;
+        }
+        p{
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+<h2>二级标题</h2>
+<p id="bold">id='bold',设置加粗文本</p>
+<p id="font22">id='font22',设置字号22px</p>
+<!--id值要唯一-->
+<p id="font22">id='font22',设置字号22px</p>
+<!--id不能设置多个-->
+<p id="bold1 font24">id='bold1 font24',设置字号24培训，并加粗文本</p>
+<p>普通文本内容</p>
+</body>
+</html>

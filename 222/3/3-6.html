@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>id选择器</title>
+    <style type="text/css">
+        #bold{
+            font-weight: bold;
+        }
+        #font24{
+            font-size: 24px;
+        }
+        p{
+            text-decoration: underline;
+        }
+        *{
+            margin: 0; /*外边距为0*/
+            padding: 0; /*内边距为0*/
+        }
+    </style>
+</head>
+<body>
+<p id="bold">id='bold',设置粗体文字</p>
+<p id="font24">id='font24',设置字号为24px</p>
+<!--id属性值是唯一的-->
+<p id="font24">id='font24',设置字号为24px</p>
+<!--id属性不能定义多个值-->
+<p id="bold font24">id='bold font24'同时设置粗体和字号24px</p>
+<p>正文文本</p>
+</body>
+</html>

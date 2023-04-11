@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复合选择器权重叠加</title>
+    <style type="text/css">
+        .inner{
+            font-size: 50px;
+        }
+        div div div div div div div div div div div{
+            font-size: 5px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div><div><div><div><div><div><div><div><div>
+        <div class="inner">文本样式修改</div>
+    </div></div></div></div></div></div></div></div></div>
+</div>
+</body>
+</html>

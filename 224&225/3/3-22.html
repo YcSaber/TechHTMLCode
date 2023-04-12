@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复合选择器权重叠加</title>
+    <style type="text/css">
+        div div div div div div div div div div div{
+            color: #03ed67;
+        }
+        .inner{
+            color: #3366cc;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div><div><div><div><div><div><div><div><div>
+        <div class="inner" style="font-size: 30px">文本样式设置</div>
+    </div></div></div></div></div></div></div></div></div>
+</div>
+</body>
+</html>

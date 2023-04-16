@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>优先级</title>
+    <style type="text/css">
+        /*#one{*/
+            /*color: red;*/
+            /*font-size: 30px;*/
+        /*}*/
+        /*.a{*/
+             /*color: #ff22bb;*/
+             /*font-size: 30px;*/
+         /*}*/
+        /*p{*/
+            /*color: blue;*/
+            /*font-size: 30px;*/
+        /*}*/
+        strong{
+            color: #cccccc;
+        }
+        p strong{
+            color: black;
+        }
+        .blue{
+            color: blue!important;
+        }
+        strong.blue{
+            color: deepskyblue;
+        }
+        .father strong{
+            color: #03ed67;
+        }
+        p.father strong{
+            color: #799582;
+        }
+        p.father .blue{
+            color: #399dff;
+        }
+        #header{
+            color: #ffee00;
+        }
+        #header strong{
+            color: #ff9900;
+        }
+        #header strong.blue{
+            color: #de3299;
+        }
+    </style>
+</head>
+<body>
+<!--<p class="a" id="one">文字颜色设置</p>-->
+<p class="father" id="header" style="font-size: 30px">
+    <strong class="blue" style="color: pink">文本颜色</strong>
+</p>
+</body>
+</html>

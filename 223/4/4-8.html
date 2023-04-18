@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>:not选择器</title>
+    <style type="text/css">
+        /*div :not(h2){*/
+            /*color: #3366cc;*/
+            /*font-family: "Heiti SC", sans-serif;*/
+            /*font-style: italic;*/
+        /*}*/
+        .one :not(.two){
+            color: #3366cc;
+            font-family: "Heiti SC", sans-serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+<div class="one">
+    <h2 class="two">《赠汪伦》</h2>
+    <p>李白乘舟将欲行，</p>
+    <p>忽闻岸上踏歌声。</p>
+    <p>桃花潭水深千尺，</p>
+    <p>不及汪伦送我情。</p>
+</div>
+</body>
+</html>

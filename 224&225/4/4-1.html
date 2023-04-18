@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E[att^=value]选择器</title>
+    <style type="text/css">
+        p,div{
+            font-size: 30px;
+        }
+        [id^="one"]{
+            color: #399dff;
+        }
+        [id^='two']{
+            color: #de3299;
+        }
+        p[class^='one']{
+            text-decoration: underline;
+        }
+        p[class^='two']{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+<p id="one" class="one">4月17日</p>
+<p id="two" class="two">8：00-9：30</p>
+<p id="one1" class="one1">html5+css3</p>
+<p id="two2" class="two2">计应224&225</p>
+<div id="one11" class="one11">5#301_302</div>
+<div id="two22" class="two22">(1-18)</div>
+</body>
+</html>

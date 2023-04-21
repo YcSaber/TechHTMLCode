@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>:before选择器和:after选择器</title>
+    <style type="text/css">
+
+        .one::before{
+            content: "使用：before选择器插入该段文字。";
+            color: #ff9900;
+            font-family: "Heiti SC", sans-serif;
+            font-style: italic;
+        }
+        p::after{
+            content: url("zhongqiu.png");
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+<p class="one">这是一个段落文本，在这个文本前通过:before选择器插入一段文字</p>
+<p class="two">中秋快乐<br></p>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置边框样式</title>
+    <style type="text/css">
+        p{
+            font-size: 30px;
+        }
+        .one{
+            border-style: double;
+        }
+        .two{
+            border-top-style: solid;
+            border-right-style: dashed;
+            border-bottom-style: dotted;
+            border-left-style: double;
+            /*border-style: solid dashed dotted double;*/
+        }
+        .three{
+            border-style: solid none dashed;
+        }
+    </style>
+</head>
+<body>
+<p class="one">设置双实线边框</p>
+<p class="two">上实线，右虚线，下点线，左双实线</p>
+<p class="three">上单实线，下虚线，左右无</p>
+</body>
+</html>

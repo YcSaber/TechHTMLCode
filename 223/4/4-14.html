@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>:before和:after选择器</title>
+    <style type="text/css">
+        .one::before{
+            content: "这是:before选择器添加的文本内容。";
+            color: #128095;
+            font-size: 20px;
+            font-style: italic;
+            font-family: "Heiti SC", sans-serif;
+        }
+        p::after{
+            content: url("zhongqiu.png");
+        }
+    </style>
+</head>
+<body>
+<p class="one">这是一个段落文本，在这个页面中我们要应用:before选择器来演示效果。</p>
+<p class="two">中秋主题<br/></p>
+</body>
+</html>

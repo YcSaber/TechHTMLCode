@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>:before选择器和:after选择器</title>
+    <style type="text/css">
+        p{
+            font-size: 20px;
+            color: #3366cc;
+        }
+        .one::before{
+            content: "这句话是使用:before选择器插入的。";
+            font-size: 30px;
+            color: #de3299;
+        }
+        p::after{
+            content: url("zhongqiu.png");
+        }
+    </style>
+</head>
+<body>
+<p class="one">这段文本文档前用：before选择器插入一段文本</p>
+<p>这段文本文档前用：before选择器插入一段文本</p>
+<p class="two">中秋快乐<br/></p>
+</body>
+</html>

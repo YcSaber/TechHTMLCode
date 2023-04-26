@@ -4,12 +4,41 @@
     <meta charset="UTF-8">
     <title>设置边框宽度</title>
     <style type="text/css">
+        p{
+            font-size: 30px;
+        }
         .one{
             border-width: 2px;
+        }
+        .two{
+            border-style: solid;
+            border-width: 5px;
+            border-color: #ff22bb;
+        }
+        .three{
+            border-style: dashed solid;
+            /*border-top-width: 5px;*/
+            /*border-right-width: 1px;*/
+            /*border-bottom-width: 8px;*/
+            /*border-left-width: 3px;*/
+            border-width: 5px 1px 8px 15px;
+            /*border-top-color: #128095;*/
+            /*border-right-color: #ff22bb;*/
+            /*border-bottom-color: #8104ff;*/
+            /*border-left-color: #03ed67;*/
+            border-color: #8104ff #dc143c #03ed67 transparent;
+
+        }
+        .four{
+            border-style: dashed solid dashed none;
+            border-width: 5px 1px 8px 15px;
         }
     </style>
 </head>
 <body>
 <p class="one">无边框情况下</p>
+<p class="two">边框宽度5px实线</p>
+<p class="three">边框样式上下虚线，左右实线。边框宽度上5px，右1px，下8px,左3px</p>
+<p class="four">边框样式上下虚线，左右实线。边框宽度上5px，右1px，下8px,左3px</p>
 </body>
 </html>

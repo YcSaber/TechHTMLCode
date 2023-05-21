@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>嵌套块元素外边距合并</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .father{
+            width: 600px;
+            height: 400px;
+            background: #ff3333;
+            margin-top: 50px;
+            border: 1px solid;
+        }
+        .son{
+            width: 200px;
+            height: 200px;
+            background: #399dff;
+            margin-top: 90px;
+        }
+    </style>
+</head>
+<body>
+<div class="father">
+    <div class="son"></div>
+</div>
+</body>
+</html>

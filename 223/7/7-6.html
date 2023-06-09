@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css控制单元格边距</title>
+    <style type="text/css">
+        table{
+            border: 5px solid #de5e3b;
+        }
+        td,th{
+            border: 1px solid #128095;
+            padding: 20px;
+            margin: 20px; /*无效，不起作用*/
+        }
+    </style>
+</head>
+<body>
+<table>
+    <caption>喜爱时间排行</caption>
+    <tr>
+        <th>排名</th>
+        <th>时间</th>
+        <th>票数</th>
+    </tr>
+    <tr>
+        <th>1</th>
+        <td>3-4</td>
+        <td>300</td>
+    </tr>
+    <tr>
+        <th>2</th>
+        <td>5-6</td>
+        <td>250</td>
+    </tr>
+    <tr>
+        <th>3</th>
+        <td>7-8</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <th>4</th>
+        <td>1-2</td>
+        <td>1</td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css控制单元格边距</title>
+    <style type="text/css">
+        table{
+            border: 5px solid #3366cc;
+        }
+        td,th{
+            border: 1px solid #006666;
+            padding: 40px;
+            margin: 20px; /*无效设置*/
+        }
+    </style>
+</head>
+<body>
+<table cellspacing="10">
+    <caption>大合唱排行</caption>
+    <tr>
+        <th>排名</th>
+        <th>院系</th>
+        <th>曲目</th>
+        <th>出场顺序</th>
+    </tr>
+    <tr>
+        <th>1</th>
+        <td>信电</td>
+        <td>曲目1</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <th>2</th>
+        <td>传艺</td>
+        <td>曲目3</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <th>3</th>
+        <td>机械</td>
+        <td>曲目1</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <th>4</th>
+        <td>医护</td>
+        <td>曲目2</td>
+        <td>2</td>
+    </tr>
+</table>
+</body>
+</html>

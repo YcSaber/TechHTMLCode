@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>select控件</title>
+</head>
+<body>
+<form action="#">
+    校区地址选择：
+    <select name="location" id="location">
+        <option value="">————请选择————</option>
+        <option value="mdj">牡丹江</option>
+        <option value="heb" selected>哈尔滨</option>
+        <option value="bj">北京</option>
+        <option value="sh">上海</option>
+        <option value="sz">深圳</option>
+    </select>
+    <br><br>
+    爱好：
+    <select name="hobby" id="hobby" multiple>
+        <option value="c">唱</option>
+        <option value="t">跳</option>
+        <option value="r">rap</option>
+        <option value="b">篮球</option>
+    </select>
+    <br><br>
+    地址：
+    <select name="area" id="area">
+        <option value="">———请选择——</option>
+        <optgroup label="牡丹江">
+            <option value="">西安区</option>
+            <option value="">东安区</option>
+            <option value="">爱民区</option>
+            <option value="">阳明区</option>
+            <option value="">其他</option>
+        </optgroup>
+        <optgroup label="北京">
+            <option value="">东城区</option>
+            <option value="">西城区</option>
+            <option value="">朝阳区</option>
+            <option value="">海淀区</option>
+            <option value="">其他</option>
+        </optgroup>
+        <optgroup label="上海">
+            <option value="">徐汇区</option>
+            <option value="">长宁区</option>
+            <option value="">普陀区</option>
+            <option value="">静安区</option>
+            <option value="">其他</option>
+        </optgroup>
+    </select>
+</form>
+</body>
+</html>

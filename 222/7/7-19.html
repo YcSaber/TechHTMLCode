@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pattern，placeholder属性</title>
+</head>
+<body>
+<form action="#">
+    账号：<input type="text" name="user" size="40"
+            pattern="^[a-zA-Z][a-zA-Z0-9_]{4,15}$" placeholder="字母开头，长度5-16位，允许数字，字母，下划线">
+    <br>
+    密码：<input type="password" name="pwd" size="40"
+              pattern="^[a-zA-Z]\w{5,17}$" placeholder="长度6-18位，允许数字，字母，下划线">
+    <br>
+    身份证：<input type="text" name="id"
+               pattern="^\d{15}|\d{18}$" placeholder="长度15，18位">
+    <br>
+    <input type="submit">
+</form>
+</body>
+</html>

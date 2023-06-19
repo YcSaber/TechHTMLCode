@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pattern属性</title>
+</head>
+<body>
+<form action="#">
+    请输入账号：（字母开头，长度5-16位，允许数字，字母，下划线）
+    <input type="text" name="user" pattern="^[a-zA-Z][a-zA-Z0-9_]{4,15}$">
+    <br>
+    请输入密码：（字母开头，长度6-18位，允许数字，字母，下划线）
+    <input type="password">
+    <br>
+    请输入邮箱：
+    <input type="email">
+    <br>
+    <input type="submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清除浮动</title>
+    <style type="text/css">
+        .father{
+            background: #999999;
+            border: 1px dashed #666666;
+            /*2:overflow:hidden清除浮动*/
+            /*overflow: hidden;*/
+            /*width: 100%;*/
+            /*zoom: 1; !*兼容ie6*!*/
+        }
+        /*3.添加after伪对象*/
+        /*.father::after{*/
+            /*clear: both;*/
+            /*content: '';*/
+            /*display: block;*/
+        /*}*/
+        .d1,.d2,.d3{
+            height: 50px;
+            line-height: 50px;
+            border: 1px solid #666;
+            margin: 15px;
+            padding: 0 10px;
+        }
+        .d1{
+            background: #03ed67;
+        }
+        .d2{
+            background: #ff9900;
+        }
+        .d3{
+            background: #ff3333;
+        }
+        .d1,.d2,.d3{
+            float: left;
+        }
+        /*.d4{*/
+            /*clear: both;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<div class="father">
+    <div class="d1">box01</div>
+    <div class="d2">box02</div>
+    <div class="d3">box03</div>
+    <!--1.添加空div并设置clear:both-->
+    <!--<div class="d4"></div>-->
+</div>
+</body>
+</html>

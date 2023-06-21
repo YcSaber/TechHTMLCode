@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>pattern属性</title>
+    <title>pattern，placeholder属性</title>
 </head>
 <body>
 <form action="#">
-    账号：（长度5-16，以字母开头，允许数字，字母，下划线）<input type="text" name="user" pattern="^[a-zA-Z][a-zA-Z0-9_]{4,15}$">
+    账号：<input type="text" name="user" pattern="^[a-zA-Z][a-zA-Z0-9_]{4,15}$" placeholder="长度5-16，以字母开头，允许数字，字母，下划线">
     <br>
-    密码：（长度6-18），以字母开头，允许数字，字母，下划线<input type="password" name="pwd" pattern="^[a-zA-Z]\w{5,17}$">
+    密码：<input type="password" name="pwd" pattern="^[a-zA-Z]\w{5,17}$" placeholder="（长度6-18），以字母开头，允许数字，字母，下划线">
     <br>
-    身份证：（15，18位）<input type="text" name="id" pattern="^([0-9]){7,18}(x|X)?$ 或 ^\d{8,18}|[0-9x]{8,18}|[0-9X]{8,18}?$">
+    身份证：<input type="text" name="id" pattern="^([0-9]){7,18}(x|X)?$ 或 ^\d{8,18}|[0-9x]{8,18}|[0-9X]{8,18}?$" placeholder="15，18位">
     <br>
     邮箱：<input type="email" name="email" pattern="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$">
     <br>

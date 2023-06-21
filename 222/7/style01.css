@@ -1,0 +1,45 @@
+body{
+    background: url("timg.jpg") no-repeat top center;
+    color: #ffffff;
+}
+form,p{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+form{
+    width: 420px;
+    height: 200px;
+    padding-top: 60px;
+    margin: 250px auto; /*左右居中，上下250外边距*/
+    background: rgba(255,255,255,0.1); /*添加透明背景色*/
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+p{
+    margin-top: 15px;
+    text-align: center;
+}
+.user,.pwd{
+    width: 160px;
+    height: 18px;
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 2px 2px 2px 22px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+.user{
+    background: url("3.png") no-repeat 5px center rgba(255,255,255,0.1);
+}
+.pwd{
+    background: url("4.png") no-repeat 5px center rgba(255,255,255,0.1);
+}
+.btn01{
+    width: 190px;
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 55px;
+    background: #57b2c9;
+    color: #ffffff;
+    border: none;
+}

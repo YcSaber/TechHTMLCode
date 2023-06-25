@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>两列布局</title>
+    <style type="text/css">
+        div{
+            width: 980px;
+            margin: 5px auto;
+            text-align: center;
+            background: #ff9900;
+        }
+        #header{
+            height: 50px;
+        }
+        #nav{
+            height: 90px;
+        }
+        #banner{
+            height: 400px;
+        }
+        .content_left{
+            height: 300px;
+            width: 430px;
+            float: left;
+            background: #57b2c9;
+        }
+        .content_right{
+            height: 300px;
+            width: 550px;
+            float: right;
+            background: #f558ff;
+        }
+        #footer{
+            height: 200px;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div id="header">头部</div>
+<div id="nav">导航</div>
+<div id="banner">焦点图</div>
+<div id="content">
+    <div class="content_left">内容左侧区域</div>
+    <div class="content_right">内容右侧区域</div>
+</div>
+<div id="footer">页面底部</div>
+</body>
+</html>

@@ -2,12 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>clear属性</title>
+    <title>清除浮动</title>
     <style type="text/css">
         .father{
             background: #799582;
             border: 5px dashed #ff3333;
+            /*!*2.给父元素添加overflow：hidden属性*!*/
+            /*width: 100%;*/
+            /*zoom: 1; !*兼容ie6*!*/
+            /*overflow: hidden;*/
         }
+        /*!*3.:after伪类*!*/
+        /*.father::after{*/
+            /*display: block;*/
+            /*content: '';*/
+            /*clear: both;*/
+        /*}*/
         .b1,.b2,.b3{
             height: 50px;
             line-height: 50px;
@@ -25,7 +35,10 @@
         .b3{
             background: #f558ff;
         }
-
+        /*1。*/
+        /*.b4{*/
+            /*clear: both;*/
+        /*}*/
     </style>
 </head>
 <body>
@@ -33,6 +46,8 @@
     <div class="b1">box1</div>
     <div class="b2">box2</div>
     <div class="b3">box3</div>
+    <!--1.在后面设置空标签，并设置clear:both属性-->
+    <!--<div class="b4"></div>-->
 </div>
 </body>
 </html>

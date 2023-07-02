@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音乐播放</title>
+    <link rel="stylesheet" href="style9.css">
+</head>
+<body>
+<div class="box_video">
+    <video src="video/mailang.webm" loop autoplay id="vd"></video>
+    <div class="left">
+        <div class="cd"></div>
+    </div>
+    <div class="right">
+        <h2>稻香</h2>
+        <p>对这个世界 如果你有太多的抱怨<br>
+            跌倒了 就不敢继续往前走<br>
+            为什么 人要这么的脆弱 堕落<br>
+            请你打开电视看看<br>
+            多少人 为生命在努力勇敢的走下去<br>
+            我们是不是该知足<br>
+            珍惜一切 就算没有拥有<br>
+            还记得 你说家是唯一的城堡<br>
+            随着稻香 河流继续奔跑<br>
+            微微笑 小时候的梦我知道<br>
+            不要哭 让萤火虫带着你逃跑<br>
+            乡间的歌谣 永远的依靠<br>
+            回家吧 回到最初的美好</p>
+        <audio src="music/11.%20稻香.mp3" autoplay loop id="mu"></audio>
+    </div>
+</div>
+<script>
+    function toggleVideo() {
+        var music = document.getElementById("vd");
+        //获取ID
+        console.log(music);
+        console.log(music.paused);
+        if (music.paused) {
+            //判读是否播放
+            music.paused=false;
+            music.play();
+            //没有就播放
+        }
+    }
+    setInterval("toggleVideo()",1);
+    function toggleSound() {
+        var music = document.getElementById("mu");
+        //获取ID
+        console.log(music);
+        console.log(music.paused);
+        if (music.paused) {
+            //判读是否播放
+            music.paused=false;
+            music.play();
+            //没有就播放
+        }
+    }
+    setInterval("toggleSound()",1);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition-timing-function</title>
+    <style type="text/css">
+        div{
+            width: 450px;
+            height: 440px;
+            margin: 0 auto;
+            background: url("HTML5.png") no-repeat center center;
+            border: 5px solid #333;
+        }
+        div:hover{
+            width: 424px;
+            height: 406px;
+            border-radius: 50%;
+            /*!*指定css动画过渡*!*/
+            /*transition-property: all;*/
+            /*!*过渡时间*!*/
+            /*transition-duration: 4s;*/
+            /*!*过渡效果*!*/
+            /*transition-timing-function: ease-out;*/
+            /*!*延迟时间*!*/
+            /*transition-delay: -1s;*/
+            transition: all 4s linear 1s;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

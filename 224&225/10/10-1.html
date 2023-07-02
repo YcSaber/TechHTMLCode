@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition-property,transition-duration</title>
+    <style type="text/css">
+        div{
+            width: 500px;
+            height: 200px;
+            background: #128095;
+            font-weight: bold;
+            color: #fff5ee;
+            font-size: 20px;
+        }
+        div:hover{
+            background: #ff3333;
+            color: #ffee00;
+            font-size: 30px;
+            margin-left: 300px;
+            transition-property: all;
+            /*-webkit-transition-property: all;*/
+            /*-moz-transition-property: all;*/
+            /*-o-transition-property: all;*/
+            transition-duration: 5s;
+        }
+    </style>
+</head>
+<body>
+<div>
+    使用transition-property属性改变元素背景色
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition-property和transition-duration</title>
+    <style type="text/css">
+        div{
+            width: 400px;
+            height: 300px;
+            background: #57b2c9;
+            color: #ffffff;
+            font-size: 20px;
+        }
+        div:hover{
+            background: #de5e3b;
+            font-size: 28px;
+            width: 450px;
+            height: 350px;
+            transition-property: all;
+            /*-webkit-transition-property: background;*/
+            /*-moz-transition-property: background;*/
+            /*-o-transition-property: background;*/
+            transition-duration: 5s;
+        }
+    </style>
+</head>
+<body>
+<div>transition-property指定动画过渡的css</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition-timing-function</title>
+    <style type="text/css">
+        div{
+            width: 480px;
+            height: 430px;
+            margin: 10px auto;
+            border: 5px solid #ff6600;
+            background: #000000;
+        }
+        div:hover{
+            width: 424px;
+            height: 406px;
+            border-radius: 50%;
+            background: url("../img/HTML5.png") no-repeat center center;
+            /*transition-property: all;*/
+            /*transition-duration: 5s;*/
+            /*transition-timing-function: ease-in-out;*/
+            /*transition-delay: -2s;*/
+            transition: all 5s ease-in-out 0s;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

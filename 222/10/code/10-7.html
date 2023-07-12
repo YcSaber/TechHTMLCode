@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rotate</title>
+    <style type="text/css">
+        div{
+            width: 300px;
+            height: 222px;
+            border: 3px solid #1b105a;
+            background: #11bf47;
+            margin: 10px;
+            float: left;
+        }
+        .div1:hover{
+            transition: all 5s ease-in-out;
+            transform: rotateX(360deg);
+        }
+        .div2:hover{
+            transition: all 5s linear;
+            transform: rotateY(180deg);
+        }
+        .div3:hover{
+            transition: all 5s linear;
+            transform: rotateZ(180deg);
+        }
+        .div4:hover{
+            transition: all 7s linear;
+            transform: rotate3d(1,1,1,360deg);
+        }
+    </style>
+</head>
+<body>
+<div class="div1">rotateX旋转</div>
+<div class="div2">rotateY旋转</div>
+<div class="div3">rotateZ旋转</div>
+<div class="div4">rotate3d旋转</div>
+</body>
+</html>

@@ -11,13 +11,23 @@
             color: #ffffff;
             border: 1px solid black;
         }
-        div:hover{
+        .div1:hover{
             transition: all 8s ease-in;
             transform: rotateX(180deg);
+        }
+        .div2:hover{
+            transition: all 8s ease-in;
+            transform: rotateY(180deg);
+        }
+        .div3:hover{
+            transition: all 4s ease-out;
+            transform: rotate3d(1,1,1,90deg);
         }
     </style>
 </head>
 <body>
-<div>rotateX()旋转</div>
+<div class="div1">rotateX()旋转</div>
+<div class="div2">rotateY()旋转</div>
+<div class="div3">rotate3d()旋转</div>
 </body>
 </html>

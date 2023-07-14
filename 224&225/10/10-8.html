@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>perspective属性</title>
+    <style type="text/css">
+        div{
+            width: 400px;
+            height: 250px;
+            border: 3px solid #1b105a;
+            margin: 0 auto;
+            perspective: 200px;
+        }
+        .div1{
+            width: 400px;
+            height: 250px;
+            background: #00796e;
+        }
+        .div1:hover{
+            transition: all 3s ease-out;
+            transform: rotate3d(1,1,0,60deg);
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="div1">元素透视</div>
+</div>
+</body>
+</html>

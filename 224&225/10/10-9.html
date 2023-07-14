@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>translate3d</title>
+    <style type="text/css">
+        div{
+            width: 200px;
+            height: 200px;
+            border: 3px solid #333333;
+            position: relative;
+            transition: all 3s ease-out;
+            transform-style: preserve-3d;
+        }
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateZ(100px);
+        }
+        .no2{
+            transform: translateZ(100px) rotateX(90deg);
+        }
+        div:hover{
+            transform: rotateX(-90deg);
+        }
+        div:visited{
+            transform: rotateX(-90deg);
+            transition: all 3s ease;
+            transform-style: preserve-3d;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="img/1.png" alt="" class="no1">
+    <img src="img/2.png" alt="" class="no2">
+</div>
+</body>
+</html>

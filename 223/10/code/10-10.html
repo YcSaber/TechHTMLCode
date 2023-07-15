@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation1</title>
+    <style type="text/css">
+        img{
+            width: 200px;
+            /*animation-name: my_move;*/
+            /*animation-duration: 7s;*/
+            /*animation-timing-function: linear;*/
+            /*animation-iteration-count: infinite;*/
+            /*animation-direction: alternate;*/
+            animation: my_move 7s linear infinite alternate;
+        }
+        @keyframes my_move {
+            from{
+                transform: translate(0) rotateY(180deg);
+            }
+            50%{
+                transform: translate(1000px) rotateY(180deg);
+            }
+            51%{
+                transform: translate(1000px) rotateY(0deg);
+            }
+            to{
+                transform: translate(0) rotateY(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<img src="../img/people.gif" alt="">
+</body>
+</html>

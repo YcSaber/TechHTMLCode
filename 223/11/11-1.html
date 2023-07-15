@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+</head>
+<body>
+<canvas id="cavs" width="500" height="500">
+    您的浏览器不支持canvas
+</canvas>
+
+
+
+
+<script>
+    // var a = 1;
+    // var b = 'aaa';
+    // var c = 1.666;
+    // var d = 'b';
+    // console.log(a,b,c,d)
+
+
+
+
+    // var canvas = document.getElementById('cavs');
+    // var context = canvas.getContext('2d')
+    // context.moveTo(50,50);
+    // context.lineTo(200,50);
+    // context.lineTo(200,100);
+    // context.closePath();
+    // context.lineWidth='20';
+    // context.strokeStyle='#ff6600';
+    // context.fillStyle='#ff6600';
+    // context.fill();
+    // context.stroke();
+    // context.beginPath();
+    // context.moveTo(300,10);
+    // context.lineTo(250,180);
+    // context.lineWidth='10';
+    // context.strokeStyle='#11500f';
+    // context.stroke();
+
+
+
+    var canvas = document.getElementById('cavs');
+    var context = canvas.getContext('2d');
+    context.arc(250,200,100,0,1.5*Math.PI);
+    context.stroke();
+</script>
+</body>
+</html>

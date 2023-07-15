@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rotate</title>
+    <style type="text/css">
+        div{
+            width: 200px;
+            height: 150px;
+            background: #11bf47;
+            border: 2px solid #000000;
+            margin: 10px;
+        }
+        .div1:hover{
+            transition: all 5s linear;
+            transform: rotateX(180deg);
+        }
+        .div2:hover{
+            transition: all 5s linear;
+            transform: rotateY(180deg);
+        }
+        .div3:hover{
+            transition: all 5s linear;
+            transform: rotateZ(180deg);
+        }
+        .div4:hover{
+            transition: all 5s linear;
+            transform: rotate3d(1,1,1,360deg);
+        }
+    </style>
+</head>
+<body>
+<div class="div1">元素旋转rotateX</div>
+<div class="div2">元素旋转rotateY</div>
+<div class="div3">元素旋转rotateZ</div>
+<div class="div4">元素旋转rotate3d</div>
+</body>
+</html>
